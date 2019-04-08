@@ -22,7 +22,7 @@ def get_japanese_emoticon(path, emoticon)
     value.each do |k , v|
       binding.pry
       if k == emoticon
-        return key
+        return v
       end
     end
   end
