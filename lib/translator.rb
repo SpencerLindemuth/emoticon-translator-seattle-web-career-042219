@@ -5,7 +5,7 @@ require 'yaml'
 
 def load_library(path)
   # code goes here
-  new_hash = {"get_meaning" => {}, "get_emoticon" => {}}
+  new_hash = {"get_meaning" => {key: []}, "get_emoticon" => {}}
   library = YAML.load_file(path)
   library.each do |key, value|
     new_hash["get_meaning"] = {key => value[1]}
