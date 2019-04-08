@@ -9,9 +9,10 @@ def load_library(path)
   #binding.pry
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, emoticon)
   # code goes here
-  load_library
+  library = load_library(path)
+  
   #binding.pry
 end
 
