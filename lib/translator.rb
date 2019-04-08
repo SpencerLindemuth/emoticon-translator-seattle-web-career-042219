@@ -12,6 +12,7 @@ def load_library(path)
     new_hash[:get_emoticon] = {key => value[0]}
     end
   end
+  new_hash
   #binding.pry
 end
 
