@@ -8,7 +8,8 @@ def load_library(path)
   new_hash = {:get_meaning => {}, :get_emoticon => {}}
   library = YAML.load_file(path)
   library.each do |key, value|
-    if new_hash[key]
+    new_hash[:get_meaning] = {key => value[1]}
+    new_hash[:get_emoticon] = {key => value[0]}
     end
   end
   #binding.pry
