@@ -5,11 +5,11 @@ require 'yaml'
 
 def load_library(path)
   # code goes here
-  new_hash = {:get_meaning => {}, :get_emoticon => {}}
+  new_hash = {"get_meaning" => {}, "get_emoticon" => {}}
   library = YAML.load_file(path)
   library.each do |key, value|
-    new_hash[:get_meaning] = {key => value[1]}
-    new_hash[:get_emoticon] = {key => value[0]}
+    new_hash["get_meaning"] = {key => value[1]}
+    new_hash["get_emoticon"] = {key => value[0]}
     end
   new_hash
   #binding.pry
