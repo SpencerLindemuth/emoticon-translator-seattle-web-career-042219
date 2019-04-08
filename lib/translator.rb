@@ -37,6 +37,7 @@ def get_english_meaning(path, emoticon)
     value.each do |k, v|
       if k == emoticon
         return v
+      end
     end
   end
   "Sorry, that emoticon was not found"
