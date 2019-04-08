@@ -6,12 +6,13 @@ require 'yaml'
 def load_library(path)
   # code goes here
   YAML.load_file(path)
+  binding.pry
 end
 
 def get_japanese_emoticon
   # code goes here
   load_library
-  binding.pry
+  #binding.pry
 end
 
 def get_english_meaning
