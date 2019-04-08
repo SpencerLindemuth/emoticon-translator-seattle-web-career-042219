@@ -5,7 +5,13 @@ require 'yaml'
 
 def load_library(path)
   # code goes here
+  new_hash = {}
   library = YAML.load_file(path)
+  library.each do |key, value|
+    if new_hash[key]
+    end
+  end
+  
   binding.pry
 
   #binding.pry
