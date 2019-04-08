@@ -8,7 +8,7 @@ def load_library(path)
   new_hash = {"get_meaning" => {key: []}, "get_emoticon" => {}}
   library = YAML.load_file(path)
   library.each do |key, value|
-    new_hash["get_meaning"] = {key => value[1]}
+    new_hash["get_meaning"][:key] << value[1]
     new_hash["get_emoticon"] = {value[0] => value[1]}
     end
   new_hash
