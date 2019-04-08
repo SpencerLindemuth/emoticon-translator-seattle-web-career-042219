@@ -21,8 +21,8 @@ def get_japanese_emoticon(path, emoticon)
   library.each do |key, value|
     value.each do |k , v|
       binding.pry
-      if value[0] == emoticon
-        return value[1]
+      if value == emoticon
+        return key
       end
     end
   end
