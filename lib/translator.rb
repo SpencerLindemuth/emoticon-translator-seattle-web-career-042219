@@ -5,7 +5,7 @@ require 'yaml'
 
 def load_library(path)
   # code goes here
-  new_hash = {}
+  new_hash = {:get_meaning => {}, :get_emoticon => {}}
   library = YAML.load_file(path)
   library.each do |key, value|
     if new_hash[key]
